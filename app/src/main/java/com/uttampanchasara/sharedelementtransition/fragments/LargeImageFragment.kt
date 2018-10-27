@@ -15,7 +15,7 @@ import android.widget.TextView
 import com.uttampanchasara.sharedelementtransition.R
 import com.uttampanchasara.sharedelementtransition.activity.LargeImageDetailActivity
 import com.uttampanchasara.sharedelementtransition.activity.MainActivity
-import com.uttampanchasara.sharedelementtransition.adapters.SampleOneItemClickListener
+import com.uttampanchasara.sharedelementtransition.adapters.LargeImageItemClickListener
 import com.uttampanchasara.sharedelementtransition.adapters.SampleOneItemListAdapter
 import com.uttampanchasara.sharedelementtransition.models.Item
 import kotlinx.android.synthetic.main.fragment_large_image.*
@@ -25,7 +25,7 @@ import kotlinx.android.synthetic.main.fragment_large_image.*
  * @author <a href="https://github.com/UttamPanchasara">Uttam Panchasara</a>
  * @since 10/27/2018
  */
-class LargeImageFragment : Fragment(), SampleOneItemClickListener {
+class LargeImageFragment : Fragment(), LargeImageItemClickListener {
 
     /**
      * add views to shared elements

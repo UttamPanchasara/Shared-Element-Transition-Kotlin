@@ -6,6 +6,10 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        // enable window content transition
+        <item name="android:windowContentTransitions">true</item>
+
     </style>
 
     <style name="NoActionBar" parent="AppTheme">
