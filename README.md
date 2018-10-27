@@ -103,7 +103,7 @@ Note that the shared element transitions require Android 5.0 (API level 21) and 
  
  ![alt text][1.1] : https://twitter.com/utm_panchasara
  
- ![alt text][2.2] : http://www.facebook.com/Uttampanchasara
+ ![alt text][2.2] : https://www.facebook.com/Uttampanchasara
  
  [1.1]: http://i.imgur.com/wWzX9uB.png (twitter icon with padding)
  [2.2]: http://i.imgur.com/fep1WsG.png (facebook icon without padding)
