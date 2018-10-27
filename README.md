@@ -15,7 +15,7 @@ Note that the shared element transitions require Android 5.0 (API level 21) and 
 
 ### 1. Enable Window Content Transitions
 
- ```
+ ```xml
  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
    <!-- other theme lines. -->
 
@@ -29,7 +29,7 @@ Note that the shared element transitions require Android 5.0 (API level 21) and 
  
  For e.g. in `FirstActivity.xml` OR `list_layout.xml` 
  
- ```
+ ```xml
  <ImageView
           android:id="@+id/ivProfile"
           android:transitionName="profile"
@@ -40,7 +40,7 @@ Note that the shared element transitions require Android 5.0 (API level 21) and 
  
  In `DetailActivity.xml`
  
- ```
+ ```xml
  <ImageView
           android:id="@+id/ivDetailProfile"
           android:transitionName="profile"
@@ -54,20 +54,22 @@ Note that the shared element transitions require Android 5.0 (API level 21) and 
  Start the target activity by specifying a bundle of those shared elements and views from the source.
  
  ***Single Shared Element***
- ```
+ ```kotlin
  val detailIntent = Intent(mActivity, DetailActivity::class.java)
  val imageViewPair = Pair.create<View, String>(imageView, getString("YourTransitionName"))
  val options = ActivityOptionsCompat.makeSceneTransitionAnimation(mActivity, imageViewPair)
+ 
  detailIntent.putExtra(LargeImageDetailActivity.DATA, data) // pass your bundle data
  startActivity(detailIntent, options.toBundle())
  ```
  
  ***Multiple Shared Element***
- ```
+ ```kotlin
  val detailIntent = Intent(mActivity, LargeImageDetailActivity::class.java)
  val imageViewPair = Pair.create<View, String>(imageView, "YourTransitionName")
  val textViewPair = Pair.create<View, String>(textView, "YourTransitionName")
  val options = ActivityOptionsCompat.makeSceneTransitionAnimation(mActivity, imageViewPair, textViewPair)
+ 
  detailIntent.putExtra(LargeImageDetailActivity.DATA, data) // pass your bundle data
  startActivity(detailIntent, options.toBundle())
  ```
@@ -80,14 +82,14 @@ Note that the shared element transitions require Android 5.0 (API level 21) and 
  
  Example :
  
- ```
+ ```kotlin
  override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         if (item?.itemId == android.R.id.home) {
             //to reverse the scene transition animation
             supportFinishAfterTransition()
         }
         return super.onOptionsItemSelected(item)
-    }
+ }
  ```
  
  ## References 
