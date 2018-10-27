@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:layout_height="0dp"/>
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3"/>
+
+    <ImageView
+            android:id="@+id/ivDetail"
+            android:contentDescription="@null"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/image_transition_name"
+            tools:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline2"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4"/>
+
+    <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/guideline2"
+            android:textSize="22sp"
+            tools:text="Item Name"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+
+    <ScrollView
+            app:layout_constraintTop_toBottomOf="@+id/txtName"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp">
+
+        <TextView
+                android:textSize="@dimen/txt18sp"
+                android:padding="16dp"
+                android:textColor="#000"
+                android:text="@string/lorem_ipsum"
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

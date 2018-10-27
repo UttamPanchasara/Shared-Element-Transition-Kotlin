@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/ivSmallImage"
+                android:contentDescription="@null"
+                android:layout_width="60dp"
+                android:transitionName="@string/image_transition_name"
+                android:scaleType="centerCrop"
+                android:layout_height="60dp"/>
+
+        <TextView
+                android:id="@+id/txtName"
+                app:layout_constraintStart_toEndOf="@+id/ivSmallImage"
+                android:layout_width="0dp"
+                tools:text="Item Name"
+                android:textStyle="bold"
+                android:textSize="@dimen/txt18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="@dimen/padding5dp"
+                android:textColor="#000"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:transitionName="@string/text_transition_name"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/txtCount"
+                app:layout_constraintTop_toBottomOf="@+id/txtName"
+                android:layout_width="wrap_content"
+                tools:text="8"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/padding5dp"
+                android:textColor="#000"
+                android:paddingEnd="@dimen/padding5dp"
+                android:gravity="center_vertical|center"
+                app:layout_constraintBottom_toBottomOf="@+id/ivSmallImage"
+                app:layout_constraintStart_toEndOf="@+id/ivSmallImage"
+                android:layout_height="wrap_content"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
