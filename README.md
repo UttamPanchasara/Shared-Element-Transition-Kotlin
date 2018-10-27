@@ -1,14 +1,15 @@
 # Shared Element Transition Demo Kotlin
 Android Shared element transition example in **Kotlin** from Fragment viewpager to Activity
 **Fragment(Recyclerview) to Activity**
+
 ## Animation with Large image item
-![Imgur Image](http://i.imgur.com/0FF8tvk.gif)
+<img src="http://i.imgur.com/0FF8tvk.gif" height="400" alt="Screenshot"/>
 
 ## Animation with Small image item
-![Imgur Image](https://i.imgur.com/lNXYTyy.gif)
+<img src="https://i.imgur.com/lNXYTyy.gif" height="400" alt="Screenshot"/>
 
 ## Animation with Grid image List
-![Imgur Image](https://i.imgur.com/pNC1BqE.gif)
+<img src="https://i.imgur.com/pNC1BqE.gif" height="400" alt="Screenshot"/> 
 
 # To enable Share element transition 
 Note that the shared element transitions require Android 5.0 (API level 21) and above and will be ignored for any lower API versions. 
