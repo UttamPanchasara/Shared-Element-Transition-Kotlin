@@ -49,7 +49,7 @@ Note that the shared element transitions require Android 5.0 (API level 21) and 
           android:layout_height="250dp" />
  ```
  
- # 3. Start Activity
+ ### 3. Start Activity
  
  Start the target activity by specifying a bundle of those shared elements and views from the source.
  
