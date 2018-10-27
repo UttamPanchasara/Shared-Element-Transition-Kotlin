@@ -16,7 +16,7 @@ import com.uttampanchasara.sharedelementtransition.R
 import com.uttampanchasara.sharedelementtransition.activity.LargeImageDetailActivity
 import com.uttampanchasara.sharedelementtransition.activity.MainActivity
 import com.uttampanchasara.sharedelementtransition.adapters.LargeImageItemClickListener
-import com.uttampanchasara.sharedelementtransition.adapters.SampleOneItemListAdapter
+import com.uttampanchasara.sharedelementtransition.adapters.LargeImageListAdapter
 import com.uttampanchasara.sharedelementtransition.models.Item
 import kotlinx.android.synthetic.main.fragment_large_image.*
 
@@ -44,7 +44,7 @@ class LargeImageFragment : Fragment(), LargeImageItemClickListener {
         return view
     }
 
-    lateinit var mAdapter: SampleOneItemListAdapter
+    lateinit var mAdapter: LargeImageListAdapter
     //activity instance
     lateinit var mActivity: AppCompatActivity
 
@@ -52,7 +52,7 @@ class LargeImageFragment : Fragment(), LargeImageItemClickListener {
         super.onViewCreated(view, savedInstanceState)
         mActivity = activity as MainActivity
 
-        mAdapter = SampleOneItemListAdapter(mActivity, this)
+        mAdapter = LargeImageListAdapter(mActivity, this)
         rvLargeImageItems.layoutManager = LinearLayoutManager(mActivity)
         rvLargeImageItems.adapter = mAdapter
 

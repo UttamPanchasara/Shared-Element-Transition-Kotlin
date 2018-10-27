@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.list_large_image.view.*
  * @author <a href="https://github.com/UttamPanchasara">Uttam Panchasara</a>
  * @since 10/26/2018
  */
-class SampleOneItemListAdapter(val context: Context, val clickListener: LargeImageItemClickListener) :
+class LargeImageListAdapter(val context: Context, val clickListener: LargeImageItemClickListener) :
     RecyclerView.Adapter<ViewHolder>() {
 
     private lateinit var items: List<Item>
