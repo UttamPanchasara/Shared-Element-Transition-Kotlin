@@ -11,7 +11,7 @@ Android Shared element transition example in **Kotlin** from Fragment viewpager 
 ## Animation with Grid image List
 <img src="https://i.imgur.com/pNC1BqE.gif" height="400" alt="Screenshot"/> 
 
-# To enable Share element transition 
+# To enable Shared element transition 
 Note that the shared element transitions require Android 5.0 (API level 21) and above and will be ignored for any lower API versions. 
 
 ### 1. Enable Window Content Transitions
