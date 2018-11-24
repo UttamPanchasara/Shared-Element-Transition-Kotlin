@@ -109,3 +109,7 @@ Note that the shared element transitions require Android 5.0 (API level 21) and 
  [1.1]: http://i.imgur.com/wWzX9uB.png (twitter icon with padding)
  [2.2]: http://i.imgur.com/fep1WsG.png (facebook icon without padding)
  
+ <a href="https://stackoverflow.com/users/5719935/uttam-panchasara">
+<img src="https://stackoverflow.com/users/flair/5719935.png" width="208" height="58" alt="profile for Uttam Panchasara at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Uttam Panchasara at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a>
+ 
