@@ -111,5 +111,5 @@ Note that the shared element transitions require Android 5.0 (API level 21) and 
  
  # Donate
 > If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
-- Google Pay **(panchasarauttam@okaxis)**
+- Google Pay **(panchasarauttam-1@okaxis)**
  
